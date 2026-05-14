@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ivan Evseev — AI Automation Specialist / Industrial AI Architect. AI-first системы, аналитика, автоматизация и интерфейсы для промышленности и бизнеса.">
+  <title>Ivan Evseev — Industrial AI / AI Automation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-scan" aria-hidden="true"></div>
+  <div class="bg-orbit" aria-hidden="true"></div>
+  <div class="bg-edge" aria-hidden="true"></div>
+
+  <div class="telemetry" aria-hidden="true">
+    <div class="container telemetry__inner">
+      <span class="telemetry__item">OPS · INDUSTRIAL AI SURFACE</span>
+      <span class="telemetry__item telemetry__item--dim">AI ORCHESTRATION · HUMAN-IN-LOOP</span>
+      <span class="telemetry__item telemetry__item--right"><span class="live-dot" aria-hidden="true"></span> CHANNEL STABLE</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <div class="site-header__brand">
+        <a class="logo" href="#top">Ivan Evseev</a>
+        <span class="site-header__mono">INDUSTRIAL AI · ARCHITECTURE</span>
+      </div>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#about">Обо мне</a>
+        <a href="#work">Что делаю</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contact" class="nav__cta">Контакты</a>
+      </nav>
+      <p class="site-header__build">BUILD <span class="site-header__sep">·</span> STATIC <span class="site-header__sep">·</span> 2026</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="container hero__shell">
+        <div class="system-map" aria-hidden="true">
+          <svg class="system-map__svg" viewBox="0 0 820 360" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="linePulse" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0"/>
+                <stop offset="48%" stop-color="#7dd3fc" stop-opacity="0.55"/>
+                <stop offset="100%" stop-color="#e8a838" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path class="map-line" d="M92 80 L252 70 L412 134 L612 96 L744 132" />
+            <path class="map-line map-line--amber" d="M128 230 L292 178 L470 228 L650 184 L754 254" />
+            <path class="map-line" d="M252 70 L292 178 L412 134 L470 228 L612 96 L650 184" />
+            <path class="map-pulse" d="M92 80 L252 70 L412 134 L612 96 L744 132" />
+            <path class="map-pulse map-pulse--delay" d="M128 230 L292 178 L470 228 L650 184 L754 254" />
+          </svg>
+          <span class="map-node map-node--doc">DOC AI</span>
+          <span class="map-node map-node--vector">VECTOR</span>
+          <span class="map-node map-node--ops">AI OPS</span>
+          <span class="map-node map-node--kpi">KPI</span>
+          <span class="map-node map-node--risk">RISKS</span>
+          <span class="map-node map-node--decision">DECISION</span>
+        </div>
+
+        <div class="hero__grid">
+          <div class="hero__main">
+            <p class="hero__eyebrow">AI Automation / Industrial AI / Digital Systems</p>
+            <h1 class="hero__title">AI-first системы для промышленности, аналитики и автоматизации</h1>
+            <p class="hero__lead">Проектирую интерфейсы, дашборды и AI-workflow, которые превращают сложные данные в понятные решения.</p>
+            <p class="hero__tagline">От архитектуры процессов — до готового digital-продукта.</p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#projects">Посмотреть проекты</a>
+              <a class="btn btn--ghost" href="https://t.me/MyPartnerGroup" target="_blank" rel="noopener noreferrer">Обсудить задачу</a>
+            </div>
+          </div>
+
+          <aside class="ops-console" aria-label="AI orchestration console">
+            <div class="ops-console__bar">
+              <span>AI ORCHESTRATION</span>
+              <span class="ops-console__state"><span class="live-dot live-dot--panel"></span> ACTIVE</span>
+            </div>
+            <div class="metrics">
+              <div class="metric">
+                <span class="metric__label">AGENTS</span>
+                <strong>12</strong>
+              </div>
+              <div class="metric">
+                <span class="metric__label">PIPELINES</span>
+                <strong>24</strong>
+              </div>
+              <div class="metric">
+                <span class="metric__label">LATENCY</span>
+                <strong>0.8s</strong>
+              </div>
+            </div>
+            <ol class="timeline">
+              <li><time>09:42</time><span>PDF/DOCX parsed</span></li>
+              <li><time>09:43</time><span>Embeddings indexed</span></li>
+              <li><time>09:44</time><span>KPI anomaly detected</span></li>
+              <li><time>09:45</time><span>AI recommendation generated</span></li>
+              <li><time>09:46</time><span>Dashboard updated</span></li>
+            </ol>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--about" id="about">
+      <div class="container">
+        <header class="section__head">
+          <p class="section__tag">SYS · CONTEXT</p>
+          <h2 class="section__title">Я соединяю AI, аналитику, автоматизацию и современные интерфейсы</h2>
+        </header>
+        <div class="about__grid">
+          <div class="about__text prose">
+            <p>Моя специализация — AI-first системы для бизнеса, промышленности и digital-проектов.</p>
+            <p>Я работаю на стыке AI-инструментов, аналитики, UX, автоматизации и industrial-tech решений.</p>
+            <p>Сейчас развиваю AI ecosystem для горной промышленности: анализ документов, визуализация данных, AI-агенты, планирование и автоматизация процессов.</p>
+          </div>
+          <aside class="about__aside card card--accent">
+            <span class="about__aside-label">FOCUS / PRIORITY</span>
+            <p class="about__aside-text">AI-first · Industrial Tech · System Architecture · UX</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <p class="section__tag">CAP · DELIVERABLES</p>
+          <h2 class="section__title section__title--center">Что я делаю</h2>
+        </header>
+        <div class="cards-grid">
+          <article class="card card--service">
+            <p class="card__rail">MOD · ANALYTICS</p>
+            <h3 class="card__title">AI-платформы и дашборды</h3>
+            <p class="card__text">Системы аналитики, мониторинга и управления данными для бизнеса и промышленности.</p>
+          </article>
+          <article class="card card--service">
+            <p class="card__rail">MOD · AUTOMATION</p>
+            <h3 class="card__title">AI Automation</h3>
+            <p class="card__text">Workflow, AI-агенты, Make, n8n и автоматизация повторяющихся процессов.</p>
+          </article>
+          <article class="card card--service">
+            <p class="card__rail">MOD · INDUSTRIAL</p>
+            <h3 class="card__title">Industrial AI Systems</h3>
+            <p class="card__text">AI-first решения для производственных предприятий, шахт и технических объектов.</p>
+          </article>
+          <article class="card card--service">
+            <p class="card__rail">MOD · INTERFACE</p>
+            <h3 class="card__title">Web & UX Interfaces</h3>
+            <p class="card__text">Современные интерфейсы для сложной информации, принятия решений и презентации продукта.</p>
+          </article>
+          <article class="card card--service">
+            <p class="card__rail">MOD · VISUALIZATION</p>
+            <h3 class="card__title">Аналитика и визуализация</h3>
+            <p class="card__text">Power BI, Excel-аналитика, KPI-системы и визуализация производственных процессов.</p>
+          </article>
+          <article class="card card--service">
+            <p class="card__rail">MOD · PRODUCT</p>
+            <h3 class="card__title">AI-first Digital Products</h3>
+            <p class="card__text">Продукты, где AI встроен в логику системы, а не добавлен “для галочки”.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="approach">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <p class="section__tag">FLOW · METHOD</p>
+          <h2 class="section__title section__title--center">Как я работаю</h2>
+        </header>
+        <ol class="steps">
+          <li class="steps__item card">
+            <span class="steps__num">01</span>
+            <h3 class="steps__title">Сначала система</h3>
+            <p class="steps__text">Разбираю процессы, данные и реальную задачу бизнеса.</p>
+          </li>
+          <li class="steps__item card">
+            <span class="steps__num">02</span>
+            <h3 class="steps__title">Потом логика и UX</h3>
+            <p class="steps__text">Проектирую сценарий: где пользователь смотрит, думает и принимает решение.</p>
+          </li>
+          <li class="steps__item card">
+            <span class="steps__num">03</span>
+            <h3 class="steps__title">Потом AI и реализация</h3>
+            <p class="steps__text">Собираю интерфейс, автоматизацию и AI-инструменты в рабочую систему.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--preview" id="preview">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <p class="section__tag">LIVE · SYSTEM PREVIEW</p>
+          <h2 class="section__title section__title--center">Пример интерфейса AI Operating System</h2>
+        </header>
+        <div class="dashboard-preview">
+          <div class="preview-card preview-card--wide">
+            <div class="preview-card__head">
+              <span>PRODUCTION INTELLIGENCE</span>
+              <strong>STABLE</strong>
+            </div>
+            <div class="chart-bars" aria-hidden="true">
+              <span style="--h:42%"></span>
+              <span style="--h:68%"></span>
+              <span style="--h:54%"></span>
+              <span style="--h:82%"></span>
+              <span style="--h:61%"></span>
+              <span style="--h:76%"></span>
+              <span style="--h:48%"></span>
+              <span style="--h:88%"></span>
+            </div>
+          </div>
+          <div class="preview-card">
+            <div class="preview-card__head">
+              <span>RISK INDEX</span>
+              <strong>0.27</strong>
+            </div>
+            <div class="risk-ring" aria-hidden="true"></div>
+          </div>
+          <div class="preview-card">
+            <div class="preview-card__head">
+              <span>AI AGENTS</span>
+              <strong>12 / 12</strong>
+            </div>
+            <ul class="agent-list">
+              <li><span></span> Document AI</li>
+              <li><span></span> KPI Analyst</li>
+              <li><span></span> Risk Monitor</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <p class="section__tag">REL · CASE FILES</p>
+          <h2 class="section__title section__title--center">Избранные проекты</h2>
+        </header>
+        <div class="projects">
+          <article class="card card--project">
+            <div class="project-visual project-visual--platform" aria-hidden="true"></div>
+            <p class="card__rail card__rail--project">CASE · INDUSTRIAL PLATFORM</p>
+            <h3 class="card__title">AI Industrial Platform</h3>
+            <p class="card__text">Мультиагентная AI-платформа для промышленного предприятия.</p>
+            <p class="card__meta"><strong>Что сделано:</strong> архитектура, AI-модули, dashboard-интерфейсы, аналитика, backend-структура.</p>
+          </article>
+          <article class="card card--project">
+            <div class="project-visual project-visual--mining" aria-hidden="true"></div>
+            <p class="card__rail card__rail--project">CASE · MINING OPS</p>
+            <h3 class="card__title">AI Dashboard for Mining Operations</h3>
+            <p class="card__text">Система мониторинга процессов и аналитики горных работ.</p>
+            <p class="card__meta"><strong>Что сделано:</strong> UX, KPI, аналитика оборудования, логика интерфейсов.</p>
+          </article>
+          <article class="card card--project">
+            <div class="project-visual project-visual--workspace" aria-hidden="true"></div>
+            <p class="card__rail card__rail--project">CASE · WORKSPACE</p>
+            <h3 class="card__title">AI Automation Workspace</h3>
+            <p class="card__text">Автоматизация задач и документооборота с AI-агентами.</p>
+            <p class="card__meta"><strong>Что сделано:</strong> workflow-архитектура, интеграции, AI automation, интерфейсы.</p>
+          </article>
+          <article class="card card--project">
+            <div class="project-visual project-visual--brand" aria-hidden="true"></div>
+            <p class="card__rail card__rail--project">CASE · BRAND SURFACE</p>
+            <h3 class="card__title">Expert Portfolio & AI Branding</h3>
+            <p class="card__text">AI-first сайт для эксперта с современной подачей.</p>
+            <p class="card__meta"><strong>Что сделано:</strong> позиционирование, структура, UX, дизайн-концепция.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--about" id="why">
+      <div class="container container--narrow">
+        <header class="section__head">
+          <p class="section__tag">VAL · POSITION</p>
+          <h2 class="section__title">Почему ко мне обращаются не только за кодом</h2>
+        </header>
+        <div class="prose">
+          <p>Я вижу проект целиком: архитектуру, данные, UX, AI automation, визуальную подачу и пользовательский сценарий.</p>
+          <p class="highlight-line">AI + системное мышление + аналитика + автоматизация + современный интерфейс.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tools">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <p class="section__tag">STACK · TOOLCHAIN</p>
+          <h2 class="section__title section__title--center">Инструменты</h2>
+        </header>
+        <div class="badges" role="list">
+          <span class="badge" role="listitem">ChatGPT</span>
+          <span class="badge" role="listitem">Claude</span>
+          <span class="badge" role="listitem">Gemini</span>
+          <span class="badge" role="listitem">Cursor</span>
+          <span class="badge" role="listitem">VS Code</span>
+          <span class="badge" role="listitem">n8n</span>
+          <span class="badge" role="listitem">Make</span>
+          <span class="badge" role="listitem">Power BI</span>
+          <span class="badge" role="listitem">Excel</span>
+          <span class="badge" role="listitem">PostgreSQL</span>
+          <span class="badge" role="listitem">Redis</span>
+          <span class="badge" role="listitem">Qdrant</span>
+          <span class="badge" role="listitem">Docker</span>
+          <span class="badge" role="listitem">React</span>
+          <span class="badge" role="listitem">Next.js</span>
+          <span class="badge" role="listitem">Tailwind</span>
+          <span class="badge" role="listitem">TypeScript</span>
+          <span class="badge" role="listitem">GitHub</span>
+          <span class="badge" role="listitem">Figma</span>
+        </div>
+        <blockquote class="tools-note">
+          <p>Главный инструмент — не стек.</p>
+          <p>Главное — быстро понять задачу, собрать систему и превратить сложные процессы в понятный продукт.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="audience">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <p class="section__tag">ACL · AUDIENCE</p>
+          <h2 class="section__title section__title--center">Кому подойдёт моя работа</h2>
+        </header>
+        <ul class="audience-list">
+          <li>промышленным предприятиям</li>
+          <li>шахтам и производствам</li>
+          <li>AI-стартапам</li>
+          <li>экспертам и digital-проектам</li>
+          <li>компаниям, которым нужна автоматизация</li>
+          <li>тем, кому нужен не просто сайт, а рабочий инструмент</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section manifest" id="manifest">
+      <div class="container">
+        <p class="section__tag section__tag--manifest">POLICY · PRINCIPLE</p>
+        <blockquote class="manifest__quote">
+          <p>Хорошая AI-система — это не просто набор функций.</p>
+          <p>Это когда сложные процессы становятся понятными, данные — наглядными, а интерфейс помогает принимать решения быстрее.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section cta-final" id="cta">
+      <div class="container container--narrow">
+        <header class="section__head">
+          <p class="section__tag">LINK · ENGAGE</p>
+          <h2 class="section__title">Нужна современная AI-система, аналитика или digital-проект?</h2>
+        </header>
+        <div class="prose">
+          <p>Помогу с AI automation, аналитикой, интерфейсами, dashboard-системами, визуализацией и упаковкой digital-проектов.</p>
+        </div>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="https://t.me/MyPartnerGroup" target="_blank" rel="noopener noreferrer">Написать мне</a>
+          <a class="btn btn--ghost" href="#projects">Посмотреть проекты</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="logo logo--footer">Ivan Evseev</span>
+        <p class="site-footer__mono">ENDPOINT · CONTACT</p>
+        <p class="site-footer__role">AI Automation Specialist / Industrial AI Architect</p>
+      </div>
+      <div class="site-footer__links">
+        <a href="https://t.me/MyPartnerGroup" target="_blank" rel="noopener noreferrer">Telegram: @MyPartnerGroup</a>
+        <a href="https://github.com/ievseev08-max" target="_blank" rel="noopener noreferrer">GitHub: github.com/ievseev08-max</a>
+      </div>
+    </div>
+    <p class="site-footer__copy container">© Ivan Evseev</p>
+  </footer>
+</body>
+</html>
