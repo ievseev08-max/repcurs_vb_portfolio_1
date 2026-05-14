@@ -1162,3 +1162,185 @@ h1 {
     grid-column: auto;
   }
 }
+
+/* Animation polish layer */
+
+@keyframes activityRowCue {
+  0%, 18%, 100% { opacity: 0; }
+  4%, 12% { opacity: 1; }
+}
+
+@keyframes metricsStrongPulse {
+  0%, 100% { text-shadow: none; filter: brightness(1); }
+  50% { text-shadow: 0 0 12px rgba(98, 207, 255, .18); filter: brightness(1.06); }
+}
+
+@keyframes cardScanline {
+  0% { transform: translateX(-120%) rotate(11deg); opacity: 0; }
+  12% { opacity: .55; }
+  100% { transform: translateX(120%) rotate(11deg); opacity: 0; }
+}
+
+@keyframes networkLineBreath {
+  0%, 100% { stroke-opacity: .72; }
+  50% { stroke-opacity: 1; }
+}
+
+@keyframes nodeRingBreath {
+  0%, 100% { box-shadow: 0 0 16px rgba(241, 165, 29, .22); }
+  50% { box-shadow: 0 0 26px rgba(241, 165, 29, .38); }
+}
+
+@keyframes networkPacketGlow {
+  0%, 100% { stroke-opacity: .32; }
+  48% { stroke-opacity: 1; }
+}
+
+@keyframes nodeLabelBreath {
+  0%, 100% { opacity: .82; }
+  50% { opacity: 1; }
+}
+
+@keyframes gridBgDrift {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .94; }
+}
+
+.activity li {
+  position: relative;
+}
+
+.activity li::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: rgba(98, 207, 255, .07);
+  opacity: 0;
+  animation: activityRowCue 9.6s ease-in-out infinite;
+}
+
+.activity li:nth-child(1)::before { animation-delay: 0s; }
+.activity li:nth-child(2)::before { animation-delay: -1.6s; }
+.activity li:nth-child(3)::before { animation-delay: -3.2s; }
+.activity li:nth-child(4)::before { animation-delay: -4.8s; }
+.activity li:nth-child(5)::before { animation-delay: -6.4s; }
+.activity li:nth-child(6)::before { animation-delay: -8s; }
+
+.activity li > * {
+  position: relative;
+  z-index: 1;
+}
+
+.metrics-bar article > strong {
+  animation: metricsStrongPulse 5.8s ease-in-out infinite;
+}
+
+.metrics-bar article:nth-child(1) > strong { animation-delay: 0s; }
+.metrics-bar article:nth-child(2) > strong { animation-delay: -1.15s; }
+.metrics-bar article:nth-child(3) > strong { animation-delay: -2.3s; }
+.metrics-bar article:nth-child(4) > strong { animation-delay: -3.45s; }
+.metrics-bar article:nth-child(5) > strong { animation-delay: -4.6s; }
+
+.card::before,
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: -40% -20%;
+  width: 42%;
+  background: linear-gradient(
+    102deg,
+    transparent 0%,
+    rgba(98, 207, 255, .14) 46%,
+    rgba(241, 165, 29, .08) 52%,
+    transparent 100%
+  );
+  transform: translateX(-130%) rotate(11deg);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 4;
+  animation: none;
+}
+
+.card:hover::before,
+.project-card:hover::before {
+  animation: cardScanline 0.72s var(--ease) forwards;
+}
+
+.network__lines path {
+  animation: networkLineBreath 11s ease-in-out infinite alternate;
+}
+
+.network__lines path:nth-child(1) { animation-delay: 0s; }
+.network__lines path:nth-child(2) { animation-delay: -1.8s; }
+.network__lines path:nth-child(3) { animation-delay: -3.6s; }
+.network__lines path:nth-child(4) { animation-delay: -5.4s; }
+
+.node::before {
+  animation: nodeRingBreath 4.8s ease-in-out infinite;
+}
+
+.network__pulses path {
+  animation: dash 5.5s linear infinite, networkPacketGlow 5.5s ease-in-out infinite;
+}
+
+.network__pulses path:nth-child(2) {
+  animation-delay: -2.2s, -2.2s;
+}
+
+.node small {
+  animation: nodeLabelBreath 6.2s ease-in-out infinite;
+}
+
+.node.n1 small { animation-delay: 0s; }
+.node.n2 small { animation-delay: -1.05s; }
+.node.n3 small { animation-delay: -2.1s; }
+.node.n4 small { animation-delay: -3.15s; }
+.node.n5 small { animation-delay: -4.2s; }
+.node.n6 small { animation-delay: -5.25s; }
+
+.grid-bg {
+  animation: gridBgDrift 24s ease-in-out infinite;
+}
+
+.nav__links a {
+  transition: color .22s var(--ease), transform .22s var(--ease);
+}
+
+.nav__links a:hover {
+  transform: translateY(-1px);
+}
+
+.nav__links a:hover:not(.is-active) {
+  color: var(--cyan);
+}
+
+.btn:active {
+  transform: translateY(0);
+  transition-duration: .08s, .08s, .08s, .08s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .activity li::before,
+  .metrics-bar article > strong,
+  .network__lines path,
+  .network__pulses path,
+  .node::before,
+  .node small,
+  .grid-bg,
+  .card::before,
+  .project-card::before {
+    animation: none !important;
+  }
+
+  .nav__links a:hover {
+    transform: none;
+  }
+
+  .card:hover::before,
+  .project-card:hover::before {
+    opacity: 0 !important;
+    transform: translateX(-130%) rotate(11deg) !important;
+  }
+}
