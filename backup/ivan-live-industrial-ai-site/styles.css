@@ -18,35 +18,13 @@
   --sans: "IBM Plex Sans", system-ui, -apple-system, Segoe UI, sans-serif;
   --shell: min(1480px, calc(100% - 44px));
   --ease: cubic-bezier(.22,1,.36,1);
-  --anchor-offset: 112px;
 }
 
 * { box-sizing: border-box; }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: var(--anchor-offset);
-  color-scheme: dark;
-  -webkit-tap-highlight-color: rgba(98, 207, 255, .12);
-}
-
-.nav__links a:focus-visible,
-.footer a:focus-visible,
-.brand:focus-visible,
-.btn:focus-visible {
-  outline: 2px solid rgba(98, 207, 255, .45);
-  outline-offset: 3px;
-}
-
-.nav__links a:focus:not(:focus-visible),
-.footer a:focus:not(:focus-visible),
-.brand:focus:not(:focus-visible),
-.btn:focus:not(:focus-visible) {
-  outline: none;
-}
+html { scroll-behavior: smooth; }
 
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
 
@@ -235,7 +213,6 @@ h1 {
   letter-spacing: -.055em;
   text-transform: uppercase;
   text-shadow: 0 0 30px rgba(98,207,255,.06);
-  text-wrap: balance;
 }
 
 .lead {
@@ -570,7 +547,6 @@ h1 {
   line-height: 1.18;
   letter-spacing: -.05em;
   text-transform: uppercase;
-  text-wrap: balance;
 }
 
 .section-copy {
@@ -886,7 +862,6 @@ h1 {
   line-height: 1.08;
   letter-spacing: -.05em;
   text-transform: uppercase;
-  text-wrap: balance;
 }
 
 .cta p {
@@ -949,8 +924,6 @@ h1 {
 }
 
 @media (max-width: 860px) {
-  :root { --anchor-offset: 144px; }
-
   .topline__inner span:nth-child(2), .build, .brand-sub {
     display: none;
   }
